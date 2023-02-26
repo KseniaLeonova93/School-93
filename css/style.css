@@ -88,8 +88,8 @@ li:last-child {
 }
 
 .logo {
-  width: min(8vw, 100px);
-  height: min(8vw, 100px);
+  width: min(8vw, 80px);
+  height: min(8vw, 80px);
 }
 
 @media screen and (max-width: 900px) {
