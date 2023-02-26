@@ -60,6 +60,16 @@ nav {
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: 900px) {
+  header {
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+    height: 60px;
+  }
+}
+
 li:last-child {
   margin-right: 0px;
 }
@@ -82,10 +92,10 @@ li:last-child {
   height: min(8vw, 100px);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .logo {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -297,7 +307,7 @@ li:last-child {
 }
 
 .secition-description-box-red {
-  width: 300px;
+  width: 470px;
   margin: 30px;
   padding: 10px;
   border-radius: 20px;
@@ -316,9 +326,16 @@ li:last-child {
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .secition-description-box-red {
+    order: 1;
+  }
+}
+
 @media screen and (max-width: 719px) {
   .secition-description-box-red {
     justify-content: center;
+    order: unset;
   }
 }
 
@@ -326,7 +343,7 @@ li:last-child {
   color: #fff;
   font-size: 20px;
   margin: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 500;
   display: flex;
   justify-content: center;
@@ -479,7 +496,6 @@ li:last-child {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 620px) {
@@ -525,9 +541,10 @@ li:last-child {
   z-index: 1;
   overflow: auto;
   position: relative;
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 620px) {
@@ -628,9 +645,7 @@ footer {
     display: block;
     padding: 12px 24px;
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
     font-size: 20px;
-    font-weight: 600;
     text-decoration: none;
     transition-duration: 0.25s;
   }
@@ -644,4 +659,7 @@ footer {
   .menu__box {
     width: 80vw;
   }
+}
+.menu__item {
+  font-weight: 300;
 }
