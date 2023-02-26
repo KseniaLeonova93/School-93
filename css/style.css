@@ -107,9 +107,9 @@ li:last-child {
 .secition-about__title_one {
     color:#fff;
     font-size: min(5vw, 70px);
-    margin: 00px 40px 30px 40px;
+    margin: 0px 40px 30px 40px;
     font-family: 'Nunito', sans-serif;;
-    font-weight: 400;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -118,6 +118,7 @@ li:last-child {
 @media screen and (max-width: 800px) {
     .secition-about__title_one {
         font-size: 40px;
+        margin: 0px 0px 30px 00px;
     }
 }
 
@@ -168,8 +169,8 @@ li:last-child {
     font-size: min(2vw, 30px);
     margin: 0;
     margin-bottom: 40px;
-    font-family: 'Roboto';
-    font-weight: 200;
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 300;
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
@@ -178,19 +179,19 @@ li:last-child {
 
 @media screen and (max-width: 700px) {
     .secition-about__title_three {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 560px) {
     .secition-about__title_three {
-        font-size: min(8vw, 20px);
+        font-size: min(4.5vw, 20px);
     }
 }
 
 @media screen and (max-width: 370px) {
     .secition-about__title_three {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
@@ -251,7 +252,8 @@ li:last-child {
 }
 @media screen and (max-width: 400px) {
     .secition-description__title {
-        font-size: min(10vw, 40px);
+        font-size: min(9vw, 40px);
+        margin-bottom: 10px;
     }
 }
 
@@ -276,7 +278,6 @@ li:last-child {
 
 .secition-description-box {
     width: 300px;
-    height: 350px;
     margin: 30px;
     padding: 10px;
     background: linear-gradient(#002e55, #004c8e);
@@ -292,14 +293,13 @@ li:last-child {
 
 @media screen and (max-width: 1080px) {
     .secition-description-box {
-        min-height: 460px;
+        min-height: 300px;
         justify-content: center;
     }
 }
 
 .secition-description-box-red {
     width: 300px;
-    height: 450px;
     margin: 30px;
     padding: 10px;
     border-radius: 20px;
@@ -313,14 +313,13 @@ li:last-child {
 
 @media screen and (max-width: 1080px) {
     .secition-description-box-red {
-        height: 460px;
+        min-height: 360px;
         justify-content: center;
     }
 }
 
 @media screen and (max-width: 719px) {
     .secition-description-box-red {
-        height: 580px;
         justify-content: center;
     }
 }
@@ -355,6 +354,7 @@ li:last-child {
 @media screen and (max-width: 700px) {
     .secition-description__subtitle {
         font-size: 16px !important;
+        margin: 0px 20px 20px 20px;
     }
 }
 
@@ -395,6 +395,13 @@ li:last-child {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 620px) {
+    .secition-teacher-box__default {
+
+        max-width: 300px;
+    }
 }
 
 .secition-teacher-box__bgImage{
@@ -479,6 +486,12 @@ li:last-child {
     border-radius: 20px;
 }
 
+@media screen and (max-width: 620px) {
+    .section-events-box__default {
+        max-width: 300px;
+    }
+}
+
 .section-events-box__bgImage{
     width: 100%;
     height: 297px;
@@ -488,7 +501,9 @@ li:last-child {
     left: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 1px 0px 0px 0px #111;
+
 }
 
 .section-events-box__bar{
@@ -521,7 +536,7 @@ li:last-child {
     align-items: center;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 620px) {
     .section-events-box__text {
         font-size: min(4vw, 16px);
     }
@@ -581,10 +596,11 @@ footer {
   }
   .menu__btn {
     position: fixed;
-    width: 30px;
+    width: 26px;
     height: 45px;
     cursor: pointer;
     z-index: 3;
+    right: 10px;
   }
   .menu__btn > span,
   .menu__btn > span::before,
@@ -593,7 +609,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: #bdc2db;
     transition-duration: .25s;
   }
   .menu__btn > span::before {
