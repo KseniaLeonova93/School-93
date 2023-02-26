@@ -101,7 +101,7 @@ li:last-child {
 
 .secition-about {
   height: 640px;
-  background: url(../img/fon.jpg) center/cover;
+  background: url(img/fon.jpg) center/cover;
   background-image: linear-gradient(to bottom, #004c8eaa, #111111c0),
     url(img/fon.jpg);
   background-size: center/cover;
